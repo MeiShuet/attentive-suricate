@@ -2050,33 +2050,33 @@ div.tocify {
 <p>Matrices in R can be thought of as vectors indexed using two indices instead of one. For example, the following line of code creates a 3 by 3 matrix of randomly generated values. The parameters ‘nrow’ and ‘ncol’ define the matrix dimension and the function ‘runif’ generates the nine random numbers that populate this matrix.</p>
 <div class="sourceCode" id="cb85"><pre class="sourceCode r fold-show"><code class="sourceCode r"><span id="cb85-1"><a href="#cb85-1"></a>m &lt;-<span class="st"> </span><span class="kw">matrix</span>(<span class="kw">runif</span>(<span class="dv">9</span>,<span class="dv">0</span>,<span class="dv">10</span>), <span class="dt">nrow =</span> <span class="dv">3</span>, <span class="dt">ncol =</span> <span class="dv">3</span>)</span>
 <span id="cb85-2"><a href="#cb85-2"></a>m</span></code></pre></div>
-<pre><code>##           [,1]     [,2]     [,3]
-## [1,] 0.1740971 2.159051 8.762175
-## [2,] 8.2239390 3.674581 1.465325
-## [3,] 0.1703003 8.497546 5.107453</code></pre>
+<pre><code>##          [,1]     [,2]     [,3]
+## [1,] 7.984597 7.472005 9.137601
+## [2,] 8.148084 1.526934 5.274208
+## [3,] 7.808524 1.371276 7.283985</code></pre>
 <p>If a higher dimension vector is desired, then use the <code>array</code> function to generate the n-dimensional object. A 3x3x3 array can be created as follows:</p>
 <div class="sourceCode" id="cb87"><pre class="sourceCode r fold-show"><code class="sourceCode r"><span id="cb87-1"><a href="#cb87-1"></a>m &lt;-<span class="st"> </span><span class="kw">array</span>(<span class="kw">runif</span>(<span class="dv">27</span>,<span class="dv">0</span>,<span class="dv">10</span>), <span class="kw">c</span>(<span class="dv">3</span>,<span class="dv">3</span>,<span class="dv">3</span>))</span>
 <span id="cb87-2"><a href="#cb87-2"></a>m</span></code></pre></div>
 <pre><code>## , , 1
 ## 
-##          [,1]       [,2]      [,3]
-## [1,] 6.226636 7.70644635 3.0855969
-## [2,] 3.118083 0.02853829 0.9821368
-## [3,] 4.022040 1.15216657 4.3658655
+##          [,1]     [,2]     [,3]
+## [1,] 2.349983 2.211033 6.275812
+## [2,] 4.614126 5.577335 3.696132
+## [3,] 5.995037 5.801379 6.365851
 ## 
 ## , , 2
 ## 
-##          [,1]     [,2]     [,3]
-## [1,] 2.779406 6.404241 8.908365
-## [2,] 2.205672 6.485378 2.953950
-## [3,] 2.021254 5.426175 3.577437
+##           [,1]     [,2]     [,3]
+## [1,] 7.5052670 8.379094 7.356714
+## [2,] 9.6380278 3.295677 1.296529
+## [3,] 0.5875065 9.070248 2.142855
 ## 
 ## , , 3
 ## 
 ##          [,1]     [,2]     [,3]
-## [1,] 6.099580 7.569597 2.608109
-## [2,] 5.985560 5.767349 4.739592
-## [3,] 1.089993 5.592259 1.775953</code></pre>
+## [1,] 6.798721 9.490678 7.610108
+## [2,] 7.295282 4.298788 8.044998
+## [3,] 8.187122 3.341814 1.328780</code></pre>
 <p>Matrices and arrays can store numeric or character data types, but they cannot store both.</p>
 </div>
 <div id="data-frames" class="section level4">
@@ -2180,7 +2180,7 @@ div.tocify {
 ## [[3]]
 ## function (expr, name) 
 ## .External(C_doD, expr, name)
-## &lt;bytecode: 0x0000000015878338&gt;
+## &lt;bytecode: 0x0000000014e10840&gt;
 ## &lt;environment: namespace:stats&gt;</code></pre>
 <p>When lists do not have component names, the <code>names</code> function will return NULL.</p>
 <div class="sourceCode" id="cb112"><pre class="sourceCode r fold-show"><code class="sourceCode r"><span id="cb112-1"><a href="#cb112-1"></a><span class="kw">names</span>(lst.notags)</span></code></pre></div>
